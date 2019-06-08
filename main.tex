@@ -1,0 +1,52 @@
+% arquivo principal para criar o pdf...
+% Não mecher a não ser que saiba o que esta fazendo !!!
+% Modificação feita para os alunos de sistemas de informação do IFPR Campus
+%Ivaiporã
+
+\input{fixos/pacotes}
+\input{fixos/comandos}
+
+\input{estrutura/pre-textual/informacoes}
+\input{fixos/informacoes}
+\input{fixos/setup}
+
+\begin{document}
+	
+	\frenchspacing 
+	\imprimircapa
+	\imprimirfolhaderosto*
+	
+	\input{fixos/fichaCatalografica}
+	% \input{estrutura/pre-textual/errata}
+%\input{fixos/folhaDeAprovacao}
+%	\input{estrutura/pre-textual/dedicatoria}
+	\input{estrutura/pre-textual/agradecimentos}
+	\input{estrutura/pre-textual/epigrafe}
+	\input{estrutura/pre-textual/resumo}
+	\input{estrutura/pre-textual/abstract}
+	\input{fixos/listasAutomaticas}
+	\input{estrutura/pre-textual/abreviaturas}
+	\input{estrutura/pre-textual/simbolos}
+	\input{fixos/indiceAutomatico}
+	
+	\textual
+	
+	%\input{textual/aviso_geral}
+	\input{estrutura/textual/introducao}
+	\input{estrutura/textual/fundamentao_teorica}
+	\input{estrutura/textual/desenvolvimento}
+	\input{estrutura/textual/conclusao}
+	\input{estrutura/textual/elementosdopostexto}
+	
+	\bookmarksetup{startatroot} 
+	
+	\postextual
+	
+	\bibliography{bibliografia} 
+	\input{estrutura/pos-textual/apendices}
+	\input{estrutura/pos-textual/anexos}
+	\printindex
+	
+\end{document}
+
+

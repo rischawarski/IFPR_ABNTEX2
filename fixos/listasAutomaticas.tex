@@ -1,0 +1,12 @@
+% geracao dos sumario sde listas (figuras, tabelas, algoritmos, etc.)
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+\pdfbookmark[0]{\lstlistlistingname}{lol}
+\begin{KeepFromToc} %remove lista de algoritmos do sumario
+\lstlistoflistings %lista de algoritmos aqui
+\end{KeepFromToc}
+\cleardoublepage
